@@ -26,3 +26,5 @@ On default `github_token` is infered from the context.
 
 ## Outputs
 Nothing.
+
+## Testing
