@@ -1,0 +1,22 @@
+name: Add labels based on organization members action
+description: >-
+  Add labels from a pull-request or issue in a single action. Multiple labels
+  supported.
+inputs:
+  github_token:
+    description: A GitHub token.
+    required: false
+    default: '${{ github.token }}'
+  labels_by_organization:
+    description: A json string mapping labels by organization.
+    required: true
+  repository:
+    description: 'The owner, slash repository name.'
+    required: false
+    default: '${{ github.repository }}'
+runs:
+  using: node20
+  main: dist/index.js
+branding:
+  icon: bookmark
+  color: green
