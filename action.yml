@@ -6,7 +6,7 @@ inputs:
     required: false
     default: ${{ github.token }}
   labels_by_organization:
-    description: A json string mapping labels by organization. Example : "{'organizationA': ['label1', 'label2'], 'organizationB': ['label3', 'label4']}"
+    description: A json string mapping labels by organization.
     required: true
   repository:
     description: The owner, slash repository name.
