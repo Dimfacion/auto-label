@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: Dimfacion/add-remove-label-action@v1.0.0
+      - uses: FiligranHQ/add-remove-label-action@v1.0.0
         with:
           labels_by_organization: "{\"Organization\":[\"test\"]}"
 ```
